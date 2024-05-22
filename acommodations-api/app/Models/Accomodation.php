@@ -16,6 +16,7 @@ class Accomodation extends Model
         'rooms',
         'img_url',
         'price',
-        'description'
+        'description',
+        'disabled'
     ];
 }
