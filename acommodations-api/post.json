@@ -1,0 +1,445 @@
+[
+    {
+        "name": "Ocean View Resort",
+        "address": "456 Beach Road, Seaside, Country",
+        "capacity": 300,
+        "rooms": 150,
+        "img_url": "https://example.com/image2.jpg",
+        "price": 200.00,
+        "description": "A beautiful resort with stunning ocean views."
+    },
+    {
+        "name": "Mountain Retreat Lodge",
+        "address": "789 Mountain Trail, Highland, Country",
+        "capacity": 120,
+        "rooms": 60,
+        "img_url": "https://example.com/image3.jpg",
+        "price": 180.00,
+        "description": "A peaceful lodge nestled in the mountains."
+    },
+    {
+        "name": "City Center Inn",
+        "address": "101 Central Avenue, Metropolis, Country",
+        "capacity": 250,
+        "rooms": 125,
+        "img_url": "https://example.com/image4.jpg",
+        "price": 130.00,
+        "description": "Conveniently located in the center of the city."
+    },
+    {
+        "name": "Lakeside Hotel",
+        "address": "202 Lake Road, Lakeside, Country",
+        "capacity": 180,
+        "rooms": 90,
+        "img_url": "https://example.com/image5.jpg",
+        "price": 170.00,
+        "description": "A tranquil hotel by the lake."
+    },
+    {
+        "name": "Desert Oasis Resort",
+        "address": "303 Desert Drive, Oasis, Country",
+        "capacity": 220,
+        "rooms": 110,
+        "img_url": "https://example.com/image6.jpg",
+        "price": 210.00,
+        "description": "An exotic resort in the heart of the desert."
+    },
+    {
+        "name": "Forest Hideaway",
+        "address": "404 Forest Lane, Greenwood, Country",
+        "capacity": 140,
+        "rooms": 70,
+        "img_url": "https://example.com/image7.jpg",
+        "price": 160.00,
+        "description": "A secluded hideaway in the forest."
+    },
+    {
+        "name": "Downtown Boutique Hotel",
+        "address": "505 Market Street, Downtown, Country",
+        "capacity": 100,
+        "rooms": 50,
+        "img_url": "https://example.com/image8.jpg",
+        "price": 190.00,
+        "description": "A chic boutique hotel in the downtown area."
+    },
+    {
+        "name": "Seaside B&B",
+        "address": "606 Shoreline Road, Coast, Country",
+        "capacity": 50,
+        "rooms": 25,
+        "img_url": "https://example.com/image9.jpg",
+        "price": 120.00,
+        "description": "A cozy bed and breakfast by the sea."
+    },
+    {
+        "name": "Historic Castle Hotel",
+        "address": "707 Castle Street, Oldtown, Country",
+        "capacity": 150,
+        "rooms": 75,
+        "img_url": "https://example.com/image10.jpg",
+        "price": 250.00,
+        "description": "Stay in a historic castle turned hotel."
+    },
+    {
+        "name": "Riverside Inn",
+        "address": "808 Riverside Drive, River City, Country",
+        "capacity": 170,
+        "rooms": 85,
+        "img_url": "https://example.com/image11.jpg",
+        "price": 140.00,
+        "description": "A charming inn along the river."
+    },
+    {
+        "name": "Mountain Peak Resort",
+        "address": "909 Summit Road, Peakville, Country",
+        "capacity": 200,
+        "rooms": 100,
+        "img_url": "https://example.com/image12.jpg",
+        "price": 220.00,
+        "description": "A luxurious resort at the mountain peak."
+    },
+    {
+        "name": "Urban Loft Hotel",
+        "address": "1010 Loft Avenue, Urbantown, Country",
+        "capacity": 90,
+        "rooms": 45,
+        "img_url": "https://example.com/image13.jpg",
+        "price": 180.00,
+        "description": "A modern loft hotel in the urban area."
+    },
+    {
+        "name": "Countryside Inn",
+        "address": "1111 Country Road, Village, Country",
+        "capacity": 60,
+        "rooms": 30,
+        "img_url": "https://example.com/image14.jpg",
+        "price": 130.00,
+        "description": "A quaint inn in the countryside."
+    },
+    {
+        "name": "Tropical Paradise Resort",
+        "address": "1212 Paradise Lane, Tropic, Country",
+        "capacity": 300,
+        "rooms": 150,
+        "img_url": "https://example.com/image15.jpg",
+        "price": 250.00,
+        "description": "A tropical paradise resort with all amenities."
+    },
+    {
+        "name": "Historic Downtown Hotel",
+        "address": "1313 Heritage Road, Oldcity, Country",
+        "capacity": 200,
+        "rooms": 100,
+        "img_url": "https://example.com/image16.jpg",
+        "price": 170.00,
+        "description": "A historic hotel in the downtown area."
+    },
+    {
+        "name": "Island Retreat",
+        "address": "1414 Island Drive, Islandtown, Country",
+        "capacity": 100,
+        "rooms": 50,
+        "img_url": "https://example.com/image17.jpg",
+        "price": 200.00,
+        "description": "A peaceful retreat on a private island."
+    },
+    {
+        "name": "Ski Lodge",
+        "address": "1515 Ski Road, Snowville, Country",
+        "capacity": 180,
+        "rooms": 90,
+        "img_url": "https://example.com/image18.jpg",
+        "price": 220.00,
+        "description": "A cozy lodge near the ski slopes."
+    },
+    {
+        "name": "Beachfront Hotel",
+        "address": "1616 Ocean Drive, Beachcity, Country",
+        "capacity": 240,
+        "rooms": 120,
+        "img_url": "https://example.com/image19.jpg",
+        "price": 230.00,
+        "description": "A luxurious hotel right on the beachfront."
+    },
+    {
+        "name": "Vineyard Villa",
+        "address": "1717 Wine Road, Grapetown, Country",
+        "capacity": 50,
+        "rooms": 25,
+        "img_url": "https://example.com/image20.jpg",
+        "price": 210.00,
+        "description": "A charming villa in the middle of a vineyard."
+    },
+    {
+        "name": "Eco-Friendly Lodge",
+        "address": "1818 Green Lane, Eco City, Country",
+        "capacity": 160,
+        "rooms": 80,
+        "img_url": "https://example.com/image21.jpg",
+        "price": 190.00,
+        "description": "An eco-friendly lodge surrounded by nature."
+    },
+    {
+        "name": "Luxury Spa Resort",
+        "address": "1919 Wellness Road, Spaville, Country",
+        "capacity": 300,
+        "rooms": 150,
+        "img_url": "https://example.com/image22.jpg",
+        "price": 260.00,
+        "description": "A luxury resort with a full-service spa."
+    },
+    {
+        "name": "Cliffside Hotel",
+        "address": "2020 Cliff Road, Cliffside, Country",
+        "capacity": 100,
+        "rooms": 50,
+        "img_url": "https://example.com/image23.jpg",
+        "price": 200.00,
+        "description": "A stunning hotel located on the cliffside."
+    },
+    {
+        "name": "Historic Inn",
+        "address": "2121 Old Street, Historic City, Country",
+        "capacity": 80,
+        "rooms": 40,
+        "img_url": "https://example.com/image24.jpg",
+        "price": 180.00,
+        "description": "A historic inn with antique furnishings."
+    },
+    {
+        "name": "Boutique Seaside Hotel",
+        "address": "2222 Shoreline Avenue, Seaside, Country",
+        "capacity": 60,
+        "rooms": 30,
+        "img_url": "https://example.com/image25.jpg",
+        "price": 190.00,
+        "description": "A boutique hotel with seaside views."
+    },
+    {
+        "name": "Cityscape Hotel",
+        "address": "2323 Skyline Road, Metropolis, Country",
+        "capacity": 200,
+        "rooms": 100,
+        "img_url": "https://example.com/image26.jpg",
+        "price": 170.00,
+        "description": "A modern hotel with panoramic city views."
+   
+
+ },
+    {
+        "name": "River Lodge",
+        "address": "2424 River Street, Rivertown, Country",
+        "capacity": 120,
+        "rooms": 60,
+        "img_url": "https://example.com/image27.jpg",
+        "price": 160.00,
+        "description": "A rustic lodge by the river."
+    },
+    {
+        "name": "Alpine Resort",
+        "address": "2525 Mountain Road, Alpine Village, Country",
+        "capacity": 300,
+        "rooms": 150,
+        "img_url": "https://example.com/image28.jpg",
+        "price": 240.00,
+        "description": "A luxury resort in the alpine region."
+    },
+    {
+        "name": "Urban Guesthouse",
+        "address": "2626 City Lane, Urbantown, Country",
+        "capacity": 80,
+        "rooms": 40,
+        "img_url": "https://example.com/image29.jpg",
+        "price": 140.00,
+        "description": "A cozy guesthouse in the urban center."
+    },
+    {
+        "name": "Rural Bed & Breakfast",
+        "address": "2727 Country Lane, Ruralville, Country",
+        "capacity": 40,
+        "rooms": 20,
+        "img_url": "https://example.com/image30.jpg",
+        "price": 110.00,
+        "description": "A charming B&B in a rural setting."
+    },
+    {
+        "name": "Island Resort",
+        "address": "2828 Beach Road, Island City, Country",
+        "capacity": 250,
+        "rooms": 125,
+        "img_url": "https://example.com/image31.jpg",
+        "price": 220.00,
+        "description": "A luxurious resort on a private island."
+    },
+    {
+        "name": "Historic Mansion Hotel",
+        "address": "2929 Heritage Street, Oldtown, Country",
+        "capacity": 200,
+        "rooms": 100,
+        "img_url": "https://example.com/image32.jpg",
+        "price": 230.00,
+        "description": "Stay in a historic mansion turned hotel."
+    },
+    {
+        "name": "Jungle Lodge",
+        "address": "3030 Jungle Lane, Rainforest City, Country",
+        "capacity": 150,
+        "rooms": 75,
+        "img_url": "https://example.com/image33.jpg",
+        "price": 210.00,
+        "description": "An adventurous lodge in the jungle."
+    },
+    {
+        "name": "Beachside Inn",
+        "address": "3131 Ocean Lane, Beachville, Country",
+        "capacity": 100,
+        "rooms": 50,
+        "img_url": "https://example.com/image34.jpg",
+        "price": 170.00,
+        "description": "A quaint inn right on the beach."
+    },
+    {
+        "name": "Mountain Cabin",
+        "address": "3232 Mountain Path, Hilltown, Country",
+        "capacity": 60,
+        "rooms": 30,
+        "img_url": "https://example.com/image35.jpg",
+        "price": 190.00,
+        "description": "A cozy cabin in the mountains."
+    },
+    {
+        "name": "Luxury Downtown Hotel",
+        "address": "3333 Central Avenue, Cityscape, Country",
+        "capacity": 250,
+        "rooms": 125,
+        "img_url": "https://example.com/image36.jpg",
+        "price": 260.00,
+        "description": "A luxury hotel in the downtown area."
+    },
+    {
+        "name": "Tropical Resort",
+        "address": "3434 Palm Road, Tropic City, Country",
+        "capacity": 300,
+        "rooms": 150,
+        "img_url": "https://example.com/image37.jpg",
+        "price": 250.00,
+        "description": "A tropical resort with all the amenities."
+    },
+    {
+        "name": "Countryside Retreat",
+        "address": "3535 Green Lane, Countryside, Country",
+        "capacity": 80,
+        "rooms": 40,
+        "img_url": "https://example.com/image38.jpg",
+        "price": 160.00,
+        "description": "A peaceful retreat in the countryside."
+    },
+    {
+        "name": "Urban Luxury Hotel",
+        "address": "3636 City Lane, Urbania, Country",
+        "capacity": 200,
+        "rooms": 100,
+        "img_url": "https://example.com/image39.jpg",
+        "price": 230.00,
+        "description": "A luxurious hotel in the urban area."
+    },
+    {
+        "name": "Mountain Spa Resort",
+        "address": "3737 Wellness Road, Mountain Town, Country",
+        "capacity": 180,
+        "rooms": 90,
+        "img_url": "https://example.com/image40.jpg",
+        "price": 250.00,
+        "description": "A spa resort in the mountains."
+    },
+    {
+        "name": "Seaside Villa",
+        "address": "3838 Shoreline Road, Coast City, Country",
+        "capacity": 100,
+        "rooms": 50,
+        "img_url": "https://example.com/image41.jpg",
+        "price": 210.00,
+        "description": "A luxurious villa by the seaside."
+    },
+    {
+        "name": "Historic Downtown Inn",
+        "address": "3939 Heritage Road, Historic City, Country",
+        "capacity": 60,
+        "rooms": 30,
+        "img_url": "https://example.com/image42.jpg",
+        "price": 190.00,
+        "description": "A historic inn in the downtown area."
+    },
+    {
+        "name": "Lakeview Resort",
+        "address": "4040 Lake Road, Lake City, Country",
+        "capacity": 200,
+        "rooms": 100,
+        "img_url": "https://example.com/image43.jpg",
+        "price": 230.00,
+        "description": "A resort with stunning lake views."
+    },
+    {
+        "name": "Jungle Retreat",
+        "address": "4141 Jungle Path, Rainforest Town, Country",
+        "capacity": 100,
+        "rooms": 50,
+        "img_url": "https://example.com/image44.jpg",
+        "price": 220.00,
+        "description": "A secluded retreat in the jungle."
+    },
+    {
+        "name": "Urban Oasis Hotel",
+        "address": "4242 City Road, Urban Oasis, Country",
+        "capacity": 150,
+        "rooms": 75,
+        "img_url": "https://example.com/image45.jpg",
+        "price": 200.00,
+        "description": "An urban oasis in the middle of the city."
+    },
+    {
+        "name": "Countryside Villa",
+        "address": "4343 Village Lane, Rural City, Country",
+        "capacity": 50,
+        "rooms": 25,
+        "img_url": "https://example.com/image46.jpg",
+        "price": 170.00,
+        "description": "A charming villa in the countryside."
+    },
+    {
+        "name": "Beachside Resort",
+        "address": "4444 Beach Road, Seaside Town, Country",
+        "capacity": 250,
+        "rooms": 125,
+        "img_url": "https://example.com/image47.jpg",
+        "price": 240.00,
+        "description": "A luxury resort right on the beach."
+    },
+    {
+        "name": "Mountain Retreat",
+        "address": "4545 Mountain Road, Highland City, Country",
+        "capacity": 80,
+        "rooms": 40,
+        "img_url": "https://example.com/image48.jpg",
+        "price": 200.00,
+        "description": "A peaceful retreat in the mountains."
+    },
+    {
+        "name": "Downtown Luxury Inn",
+        "address": "4646 Market Street, Metropolis, Country",
+        "capacity": 150,
+        "rooms": 75,
+        "img_url": "https://example.com/image49.jpg",
+        "price": 230.00,
+        "description": "A luxurious inn in the downtown area."
+    },
+    {
+        "name": "Seaside Cottage",
+        "address": "4747 Shoreline Drive, Coast Town, Country",
+        "capacity": 60,
+        "rooms": 30,
+        "img_url": "https://example.com/image50.jpg",
+        "price": 190.00,
+        "description": "A cozy cottage by the seaside."
+    }
+]
