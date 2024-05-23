@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Accomodation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use App\Http\Requests\AccommodationRwquest;
 
 class Accomodations extends Controller
 {
@@ -16,7 +17,15 @@ class Accomodations extends Controller
     }
 
     public function accomodations() {
+        try{
         $accomodations = Accomodation::where('disabled', false)->get();
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error getting accomodations.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
         if ($accomodations->isEmpty()) {
             return response()->json([
                 'status' => false,
@@ -31,7 +40,15 @@ class Accomodations extends Controller
     }
 
     public function accomodation($id) {
+        try{
         $accomodation = Accomodation::find($id);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error getting accomodation.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
 
         if($accomodation->disabled) {
             return response()->json([
@@ -55,7 +72,18 @@ class Accomodations extends Controller
     }
 
     public function createAccomodation() {
-        $validator = Validator::make(request()->all(), [
+        
+        //Tercer metodo
+        /*$data = new AccommodationRwquest();
+        $data->name = request('name');
+        $data->address = request('address');
+        $data->capacity = request('capacity');
+        $data->rooms = request('rooms');
+        $data->img_url = request('img_url');
+        $data->price = request('price');
+        $data->description = request('description');*/
+        //SEGUNDO METODO
+        /*$validator = Validator::make(request()->all(), [
             'name' => 'required',
             'address' => 'required',
             'capacity' => 'required',
@@ -70,15 +98,32 @@ class Accomodations extends Controller
                 'message' => 'Validation error.',
                 'data' => $validator->errors()
             ], 400);
-        }
+        }*/
+        try{
         $accomodationDatabase = Accomodation::where('name', request('name'))->first();
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error creating accomodation.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
         if ($accomodationDatabase) {
             return response()->json([
                 'status' => false,
                 'message' => 'Accomodation already exists.',
                 'data' => $accomodationDatabase
             ], 409);}
+        
+        try{
         $accomodation = Accomodation::create(request()->all()); /*INSERT INTO DATABASE*/
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error creating accomodation.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
         return response()->json([
             'status' => true,
             'message' => 'New accomodation created.',
@@ -87,7 +132,15 @@ class Accomodations extends Controller
     }
 
     public function updateAccomodation(Request $request, $id) {
+        try{
         $accomodation = Accomodation::find($id);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error updating accomodation.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
         if (!$accomodation) {
             return response()->json([
                 'status' => false,
@@ -95,7 +148,15 @@ class Accomodations extends Controller
                 'data' => 'Not data'
             ], 404);
         }
+        try{
         $accomodation->update($request->all());
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error updating accomodation.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
         return response()->json([
             'status' => true,
             'message' => 'Accomodation updated.',
@@ -104,7 +165,15 @@ class Accomodations extends Controller
     }
 
     public function deleteAccomodation($id) {
+        try{
         $accomodation = Accomodation::find($id);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error deleting accomodation.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
         if (!$accomodation) {
             
                 return response()->json([
@@ -114,8 +183,15 @@ class Accomodations extends Controller
                 ], 404);
     
             }
-
+            try{
             $accomodation->update(['disabled' => true]);
+            } catch (\Exception $e) {
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Error deleting accomodation.',
+                    'data' => $e->getMessage()
+                ], 500);
+            }
             return response()->json([
                 'status' => true,
                 'message' => 'Accomodation deleted.',
@@ -125,7 +201,15 @@ class Accomodations extends Controller
         }
     
     function patchAccomodation(Request $request, $id) {
+        try{
         $accomodation = Accomodation::find($id);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error updating accomodation.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
         if (!$accomodation) {
             return response()->json([
                 'status' => false,
@@ -133,7 +217,15 @@ class Accomodations extends Controller
                 'data' => 'Not data'
             ], 404);
         }
+        try{
         $accomodation->update($request->all());
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error updating accomodation.',
+                'data' => $e->getMessage()
+            ], 500);
+        }
 
         return response()->json([
             'status' => true,
