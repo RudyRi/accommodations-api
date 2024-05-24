@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Contracts\Validation\Validator;
 
 class AccommodationRwquest extends FormRequest
 {
@@ -32,18 +32,6 @@ class AccommodationRwquest extends FormRequest
             'description' => 'required|string',
         ];
     }
-
-    protected function failedValidation(\Illuminate\Validation\Validator $validator)
-    {
-        $response = response()->json([
-            'status' => false,
-            'message' => 'Validation error.',
-            'data' => $validator->errors()
-        ], 409);
-
-        throw new \Illuminate\Validation\ValidationException($validator, $response);
-    }
-
     public function messages(): array
     {
         return [
@@ -56,4 +44,17 @@ class AccommodationRwquest extends FormRequest
             'description.required' => 'Description is required',
         ];
     }
+
+    protected function failedValidation(Validator $validator)
+    {
+        $response = response()->json([
+            'status' => false,
+            'message' => 'Validation error.',
+            'data' => $validator->errors()
+        ], 422);
+
+        throw new \Illuminate\Validation\ValidationException($validator, $response);
+    }
+
+    
 }
